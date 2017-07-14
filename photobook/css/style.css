@@ -1,0 +1,930 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+li {
+
+    list-style: none;
+    display: inline-block
+}
+
+a {
+
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+a:hover,
+a:active {
+
+    text-decoration: none;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.btn {
+
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+
+    background-color: #222222 !important;
+    color: #3c3c3c !important;
+    border: 1px solid #fff !important;
+}
+
+@font-face {
+    font-family: AgoraSans; 
+    src: url(../fonts/pfagorasanspro-xthin.ttf); 
+   }
+
+/*NAVIGATION*/
+
+.navbar {
+    
+    background-color: #ffffff !important;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #222222 !important;
+    opacity: 0.7;
+}
+
+.navbar .fa-sign-in {
+    color: #231f20;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    opacity: 1;
+    background-color: #ffffff !important;
+}
+
+/*NAVIGATION END*/
+
+/*HEADER*/
+
+
+.header {
+    height: 600px;
+    width: 100%;
+    padding: 30px 0 30px;
+    margin-top: 50px;
+    background-image: url(../images/banner.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    padding-top: 54px;
+}
+
+.header h4 {
+    font-size: 5px
+    font-weight: lighter;
+}
+
+.header h1,
+.header h4,
+.header button {
+    margin-top: 20px;
+    font-family: AgoraSans;
+}
+
+.header .btn {
+    border-radius: 10px;
+    margin: 40px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    width: 280px;
+}
+
+.header .btn:hover {
+
+    background-color: white !important;
+    color: #000000 !important;
+    border: 1px solid black !important;
+}
+
+/*HEADER END*/
+
+/*SERVICES*/
+
+.services {
+    padding: 80px 0 80px;
+    text-align: center;
+}
+
+.services h4 {
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+    font-family: AgoraSans;
+    font-weight: bold;
+}
+
+.services i {
+    height: 160px;
+    width: 160px;
+    font-size: 60px;
+    padding: 50px 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 5px solid #ffd200;
+    color: #ffd200;
+}
+
+/*SERVICES END*/
+
+/*ADVANTAGE*/
+
+.advantage {
+    padding: 50px 0 80px;
+    text-align: center;
+    background-color: #f3f0e7;
+}
+.advantage h2,
+.advantage h4 {
+    margin: 20px 0 20px;
+    color: #000000;
+    font-family: AgoraSans;
+    font-weight: bold;
+}
+
+.advantage p {
+    color: #000000;
+    font-size: 20px;
+    font-family: AgoraSans;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.advantage img {
+    height: 150px;
+    width: 150px;
+    margin-top: 80px;
+}
+
+.advantage i {
+
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 50%;
+    background-color: #a0db8e;
+    color: #fff;
+}
+
+.advantage a:hover i {
+
+    background-color: #709963;
+}
+
+.btnred {
+    margin-top: 97px;
+    font-family: AgoraSans;
+    background-color: #e11a27;
+    color: #fbe3e5;
+    border: none;
+}
+
+
+/*ADVANTAGE END*/
+
+/*Pricing*/
+
+.pricing {
+
+    padding: 50px 0 80px;
+    text-align: center;
+    background-color: #ffffff;
+    height: 
+}
+
+.pricing h1,
+.pricing h2,
+.pricing h4,
+.pricing p {
+    font-family: AgoraSans;
+    color: #000;
+}
+
+.pricing .packages {
+    background-color: #ffd200;
+    border-radius: 15px;
+    margin-top: 30px;
+    height: 419.5px;
+    width: 290px;
+}
+
+.packagessign {
+    padding-top: 25px;
+    height: 116.47px;
+    display: inline-block;
+    text-align: center;
+}
+
+.packagescontent {
+    background-color: #fff;
+    border-left: 6px solid #ffd200;
+    border-right: 6px solid #ffd200;
+    height: 251.5px;
+    text-align: left;
+}
+
+.packagescontentline {
+    margin-left: 22px;
+}
+.packagescontentline i {
+    font-size: 20px;
+    margin-right: 18px;
+    color: #ffd200;
+}
+
+.packagescontent .money {
+    text-align: center;
+}
+
+
+.packagesfooter {
+
+    height: 50.6px;
+    padding-top: 8px;
+    display: inline-block;
+
+}
+
+.packages li {
+    display: block;
+    padding-top: 18px;
+}
+
+.packages h2,
+.packages h1{
+
+    color: #000;
+}
+
+.packages p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 !important;
+}
+
+.packages button {
+
+    margin-top: 10px;
+}
+
+.packages h1 {
+    margin-top: 83px;
+}
+
+.trapezoid {
+    border-bottom: 25px solid #ffd200;
+    border-left: 12.5px solid transparent;
+    border-right: 12.5px solid transparent;
+    height: 0;
+    width: 191px;
+    margin-top: -25px;
+    margin-left: 50px;
+}
+
+.trapezoid h5 {
+    padding-top: 5px;
+    margin: 0;
+    color: red;
+    font-size: 20px;
+    font-family: AgoraSans;
+    font-weight: bold;
+}
+
+@media(max-width:568px){
+    .pricing {
+    vertical-align: middle;
+    }
+    .packages {
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    .bestseller {
+    padding-top: 20px;
+    }
+}
+
+@media(min-width: 768px){
+    .pricing {
+    vertical-align: middle;
+    }
+    .packages {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+    .packages {
+        padding-top: 10px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+        .packages{
+            display: inline-block;
+            float: none;
+            vertical-align: middle;
+        }
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+        .packages{
+            padding-top: 10px;
+            display: inline-block;
+            float: none;
+            vertical-align: middle;
+        }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .bestseller {
+        padding-top: 20px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .bestseller {
+        padding-top: 0;
+    }
+}
+
+
+/* END PRICING */
+
+/*TESTIMONIALS*/
+
+
+.testimonials {
+    height: 767px;
+    width: 100%;
+    padding: 30px 0 30px;
+    margin-top: 50px;
+    background-image: url(../images/banner2.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    font-family: AgoraSans;
+}
+.testimonials h1 {
+    font-family: AgoraSans;
+    width: auto;
+}
+
+.testimonials .btn {
+    border-radius: 10px;
+    margin: 40px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    font-weight: bold;
+    color: #000;
+    width: 320px;
+    float: left;
+    margin-top: 145px;
+    margin-left: 70px;
+}
+
+.testimonials .btn:hover {
+    background-color: white !important;
+    color: #000000 !important;
+    border: 1px solid black !important;
+}
+
+.photoicon {
+    margin: 38px 0 0 222px;
+}
+
+.photographer {
+    margin-top: 30px;
+    float: left;
+}
+
+.photographersign {
+    margin-top: 30px;
+}
+
+
+.photographersign {
+    float: left;
+    text-align: left;
+    margin-top: 70px;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.photoicon h1 {
+    float: left;
+    font-family: AgoraSans;
+    margin-bottom: 55px;
+}
+
+.phototext {
+    margin-top: 20px;
+    width: 540px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.photographersign span {
+    font-size: 20px;
+}
+
+@media(max-width:568px) { 
+    
+    .photoicon{
+        margin: 0;
+    }
+
+    .testimonials {
+        padding-top: 0px;
+        overflow: hidden;
+    }
+
+    .photographer {
+        display: inline-block;
+        float: left;
+        vertical-align: middle;
+    }
+
+    .testimonials .btn{
+        margin: 10px 0 0 0;
+        width: 200px;
+        font-size: 13px;
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+    .photographersign {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+    .phototext {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+        width: 250px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+        .photographer {
+        vertical-align: middle;
+    }
+    .photographersign {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+    .testimonials .btn{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+        .testimonials .btn{
+        margin-left: 10px;    
+    }
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) {
+    .photographer {
+        vertical-align: middle;
+    }
+    .photographersign {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+        .testimonials .btn{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { 
+        .testimonials {
+            height: 800px;
+        }
+        
+        .phototext {
+        display: inline-block;
+        float: none;
+        vertical-align: middle; 
+        }
+
+        .photographer {
+        display: inline-block;
+        float: none;
+        vertical-align: middle; 
+    }
+    .photographersign {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+    .testimonials .btn{
+        margin-left: 10px;    
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .testimonials h1 {
+        margin-left: -250px;
+    }
+    .photographer {
+        margin-left: 70px;
+    }
+    .photographersign {
+        margin: 70px 0 0 70px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .testimonials h1 {
+        margin-left: 120px;
+    }
+}
+
+@media(max-width: 667px){
+    .photographer {
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+}
+/*TESTIMONIALS END*/
+
+/*TERMS*/
+
+.terms {
+
+    padding: 50px 0 80px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.terms h1,
+.terms h2,
+.terms h4,
+.terms p {
+    font-weight: bold;
+    font-family: AgoraSans;
+    color: #000000;
+}
+
+.terms .termspackages {
+    background-color: #ffd200;
+    border-radius: 15px;
+    margin-top: 30px;
+    height: 305.5px;
+    width: 290px;
+}
+
+.termspackagessign {
+    height: 66px;
+    display: inline-block;
+    text-align: center;
+}
+
+.termspackagescontent {
+    background-color: #f7f0e6;
+    height: 251.5px;
+    text-align: left;
+    border-top: 5.5px solid #fff;
+    border-radius: 0 0 15px 15px;
+}
+
+.termspackagescontent ul {
+    padding-top: 18px;
+    margin-left: 22px;
+}
+
+.termspackagescontent ul li {
+    display: list-item;
+    margin-left: 25.5px;
+    list-style-type: disc;
+}
+
+.termspackagescontent span {
+    font-family: AgoraSans;
+    font-weight: bold;
+    color: red;
+}
+
+.termspackagesfooter {
+
+    height: 50.6px;
+    padding-top: 8px;
+    display: inline-block;
+
+}
+
+.termspackages h2,
+.termspackages h1{
+
+    color: #000;
+}
+
+.termspackages p {
+    padding-top: 18px;
+    margin-left: 22px;
+}
+
+.termspackages button {
+
+    margin-top: 10px;
+}
+
+.termspackages h1 {
+    margin-top: 83px;
+}
+
+
+@media(max-width:568px){
+    .terms {
+    vertical-align: middle;
+    }
+    .terms {
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+    }
+}
+
+@media(min-width: 768px){
+    .terms {
+    vertical-align: middle;
+    }
+    .termspackages {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation: portrait) { 
+    .terms .btnred {
+    margin-left: 55px;
+    font-size: 16px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation: landscape) { 
+    .terms{
+        margin-left: 55px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+    .terms{
+        margin-left: 30px;
+    }
+    .terms .btnred{
+        margin-left: 20px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+        .termspackages{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+        .termspackages{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+}
+
+/* TERMS END */
+
+/*FOOTER*/
+
+
+.footer {
+    padding: 30px;
+    color: #000000;
+    background-color: #ffd200;
+    font-family: AgoraSans;
+    font-weight: bold;
+}
+
+.footer .social {
+
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.footer .row {
+    margin-left: 25px;
+}
+
+.footer input {
+
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    color: #000;
+}
+
+.footer li {
+    display: list-item;
+}
+
+.footer hr {
+    width: 156px;
+    color: #000000 !important; 
+}
+
+.footer a {
+    color: #000;
+}
+
+.footercontent hr {
+    border: 0.1px solid black;
+}
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation: landscape) { 
+    .footercontent{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+        height: 131px;
+    }
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+    .footercontent{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+    }
+    .footercontent{
+        margin-left: 25px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+    .footercontent{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+        height: 131px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) { 
+    .footercontent{
+        margin-left: 40px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+    .footercontent{
+        display: inline-block;
+        float: none;
+        vertical-align: middle;
+        height: 131px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .footercontent hr {
+        width: 140px;
+    }
+}
+
+/*FOOTER END*/
