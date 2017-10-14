@@ -1,0 +1,634 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+li {
+
+    list-style: none;
+    display: inline-block
+}
+
+a {
+
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+a:hover,
+a:active {
+
+    text-decoration: none;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+@font-face {
+    font-family: 'Conv_cyrillic_old';
+    src: url('../fonts/cyrillic_old.eot');
+    src: local('☺'), 
+    url('../fonts/cyrillic_old.woff') format('woff'),
+    url('../fonts/cyrillic_old.ttf') format('truetype'),
+    url('../fonts/cyrillic_old.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*NAVIGATION BAR*/
+
+.navbar {
+    background-color: #fdfbf6;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.nav.navbar-nav li a {
+   color: #000;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 14px;
+ }
+
+ .nav.navbar-nav li a:hover {
+   color: #be282f;
+   font-family: 'Ubuntu', sans-serif;
+ }
+
+.nav li button {
+    width: 138.5px;
+    height: 26.5px;
+    border: 1px solid #a8353a;
+    border-radius: 5px;
+    background-color: #fdfbf6;
+    color: #893626;
+    padding: 0px;
+    margin-top: 9.5px;
+    margin-right: 16.5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav li button:hover {
+    background-color: #a8353a;
+    color: #ffffff;
+    border: none;
+}
+
+.nav .language a {
+    padding: 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav .language a:hover {
+    background-color: #fdfbf6;
+    color: #a8353a;
+}
+
+.active a {
+    background-color: #fdfbf6 !important;
+    color: #b34f53 !important;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+ { 
+    .navbar-brand {
+    display: unset;
+    }
+    .navbar-brand img {
+    margin: 15px;
+    width: 140px;
+    height: 35px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape)
+ { 
+    .navbar{
+    overflow-y: scroll !important;
+    max-height: 100% !important;
+    }
+}
+
+/*NAVIGATION BAR END*/
+
+/*HEADER*/
+
+.header {
+    margin-top: 48px;
+    width: 100%;
+    height: 181px;
+    background-image: url('../images/header.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logosign h2{
+    font-family:'Conv_cyrillic_old',Sans-Serif;
+    font-size: 15.1px;
+    color: #c23539;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+ { 
+    .logo img{
+        width: 100%
+    }
+}
+
+/*HEADER END*/
+
+/* MAIN */
+
+.main {
+    background-color: #f6edd0;
+}
+
+/*MAIN SIGN*/
+
+.mainlink {
+    margin-top: 28.6px;
+}
+
+.mainlink a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #be282f;
+
+}
+
+.programsign h2 {
+    padding-left: 5px;
+    font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #000;
+    border-left: 6.6px solid #a8353a;
+    line-height: 21.3px;
+}
+
+.programsign .fa-bars {
+    color: #c8c8c8;
+}
+
+.programsign .fa-bars:hover {
+    color: #a8353a;
+}
+
+.programsign .fa-th-large {
+    margin-right: 35px;
+    color: #a8353a;
+}
+
+.programsign .fa-th-large:hover {
+    color: #c8c8c8;
+}
+
+.programsign i {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+ { 
+
+    .programsign h2 {
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #000;
+    border-left: 6.6px solid #a8353a;
+    line-height: 21.3px;
+
+}
+
+    .programsign .fa-th-large {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape)
+ { 
+    .programsign .fa-th-large {
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    }
+}
+
+
+/*MAIN SIGN END*/
+
+/*SIDEBAR*/
+
+.date {
+    margin-top: 25px;
+    width: 270px;
+    height: 189px;
+    background-color: #fff;
+}
+
+.date h4 {
+    margin-top: 0px;
+}
+
+.datecontent {
+    padding-top: 27px;
+    margin-left: 27px;
+}
+
+.theme {
+    margin-top: 10px;
+    width: 270px;
+    height: 313px;
+    background-color: #fff;
+}
+
+.themecontent{
+    padding-top: 27px;
+    margin-left: 27px;
+}
+
+.location {
+    margin-top: 10px;
+    background-color: #fff;
+    width: 270px;
+    height: 189px;
+}
+
+.locationcontent{
+    padding-top: 27px;
+    margin-left: 27px;
+}
+
+.btn span.glyphicon {               
+    opacity: 0;             
+}
+.btn.active span.glyphicon {                
+    opacity: 1;             
+}
+
+.glyphicon-ok:before {
+    color: #a8353a;
+}
+
+.btn-group>.btn:first-child {
+    padding-top: 0px;
+    padding-left: 0px;
+    background-color: #fff;
+    border-radius: 0px;
+    border: 1px solid #6e6e6e !important;
+    width: 22.5px;
+    height: 22.5px;
+    color: black;
+}
+
+.btn:active, .btn.active{
+    box-shadow: none;
+}
+
+.glyphicon-ok {
+    margin-left: 4px;
+}
+
+.checkboxsign {
+    margin-left: 10.8px;
+}
+
+.datecontent ul li {
+    display: list-item;
+    margin-bottom: 4.5px;
+
+}
+
+.themecontent ul li {
+    display: list-item;
+    margin-bottom: 4.5px;
+
+}
+
+.locationcontent ul li {
+    display: list-item;
+    margin-bottom: 4.5px;
+
+}
+
+
+
+.sidebar li button {
+    width: 138.5px;
+    height: 26.5px;
+    border: 1px solid #a8353a;
+    background-color: #fdfbf6;
+    color: #893626;
+    padding: 0px;
+    margin-top: 9.5px;
+    margin-right: 16.5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sidebar li button:hover {
+    background-color: #a8353a;
+    color: #ffffff;
+    border: none;
+}
+
+.sidebarbtn ul li{
+    display: list-item;
+}
+
+.sidebarbtn ul li button {
+    margin-left: 23.7px;
+    width: 223px;
+    height: 45.7px;
+    border-radius: 7px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+ { 
+
+    .sidebar {
+    margin-left: 24.5px;
+    }
+
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape)
+ { 
+    .sidebar {
+    margin-left: 150px;
+    }
+}
+
+/*SIDEBAR END*/
+
+/*MAIN CONTENT*/
+
+.maincontentbox {
+    margin-left: 5px;
+}
+
+.maincontent {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    height: 425px;
+    width: 270px;
+    background-color: #fff;
+}
+
+.maincontent h4 {
+    margin-left: 13px;
+    font-family: "Ubuntu";
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.maincontent ul {
+    margin-top: 36.6px;
+    margin-left: 13px;
+}
+
+.maincontent ul li{
+    display: list-item;
+    color: #000;
+}
+
+.maincontent span {
+    color: #6e6e6e;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.thirdcol h4 {
+    padding-bottom: 5px;
+}
+
+.thirdcol ul {
+    margin-top: 0px;
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+ { 
+
+    .maincontent {
+    margin-left: 10px;
+    }
+    .maincontentbox {
+    margin-left: 0px;
+    }
+
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape)
+ { 
+    .mainboxes {
+    margin-left: 125px;
+    }
+}
+
+/* MAIN CONTENT END */
+
+/*MAIN END*/
+
+/*FOOTER*/
+
+.footer {
+    padding: 30px;
+    color: #000;
+    background-color: #a8353a !important;
+}
+
+.logo2 {
+    margin-left: 79.8px;
+}
+
+.footer .contacts {
+    padding-left: 28px;
+}
+
+.footer .contacts p {
+    margin-bottom: 0px;
+    color: #491618;
+    font-size: 18px;
+    font-family: "Ubuntu";
+    line-height: 1.2;
+}
+
+.footer .contacts a {
+    color: #491618;
+}
+
+.footer .networks {
+    padding-left: 28px;
+}
+
+.footer .social {
+    font-size: 20px;
+    height: 37.6px;
+    width: 37.6px;
+    text-align: center;
+    padding: 6.5px;
+    border: 1px solid #491618;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color: #491618;
+}
+
+.footer input {
+
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    color: #000;
+}
+
+.footer .btn {
+
+    padding: 10px 5px 10px;
+    margin: -3px 0 0 5px;
+}
+
+.footertext {
+    margin-left: 70px;
+    width: 1030px;
+    font-size: 16px;
+    font-family: "Ubuntu";
+    line-height: 1.2;
+    color: #491618;
+}
+
+.copyright{
+    margin-left: 70px;
+    font-size: 16px;
+    font-family: "Ubuntu";
+    line-height: 1.2;
+    color: #491618;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+ { 
+    
+    .logo2 {
+        margin-left: 50px;
+    }
+
+    .logo2 img{
+        width: 140px;
+        height: 35px;
+    }
+
+    .contacts {
+        margin-left: 40px;
+    }
+
+    .networks {
+        margin-left: 40px;
+    }
+
+    .footertext{
+        width: 250px;
+        margin-left: 15px;
+    }
+
+    .copyright{
+        margin-left: 60px;
+    }
+
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape)
+ { 
+    .logo2 {
+        margin-left: 170px;
+    }
+
+    .logo2 img{
+        width: 140px;
+        height: 35px;
+    }
+
+    .contacts {
+        margin-left: 160px;
+    }
+
+    .networks {
+        margin-left: 160px;
+    }
+
+    .footertext{
+        width: 250px;
+        margin-left: 145px;
+    }
+
+    .copyright{
+        margin-left: 180px;
+    }
+}
+
+
+/*FOOTER END*/
