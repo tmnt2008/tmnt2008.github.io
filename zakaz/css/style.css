@@ -861,7 +861,10 @@ and (max-device-width : 1024px)  {
 
 .statistic {
   height: 1500px;
+  width: 100%;
   background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .statistic h2 {
@@ -873,14 +876,79 @@ and (max-device-width : 1024px)  {
 }
 
 .first_logo {
-  font-size: 220px;
-  top: -50%;
-}
-.second_number_logo {
-  font-size: 220px;
-  top: -50%;
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: -7%;
+  left: 15%;
+  color: rgba(255, 252, 17, 0.72);
 }
 
+.second_logo {
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: 9%;
+  left: 80%;
+  color: rgba(255, 252, 17, 0.72);
+}
+
+.third_logo {
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: 25%;
+  left: 15%;
+  color: rgba(255, 252, 17, 0.72);
+}
+.fourth_logo {
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: 38%;
+  left: 80%;
+  color: rgba(255, 252, 17, 0.72);
+}
+.fifth_logo {
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: 52%;
+  left: 15%;
+  color: rgba(255, 252, 17, 0.72);
+}
+.six_logo {
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: 66%;
+  left: 80%;
+  color: rgba(255, 252, 17, 0.72);
+}
+.seven_logo {
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: 76%;
+  left: 15%;
+  color: rgba(255, 252, 17, 0.72);
+}
+.eight_logo {
+  font-size: 260px;
+  font-family: "BebasNeueCyrillic";
+  position: absolute;
+  z-index: -1;
+  top: 85%;
+  left: 80%;
+  color: rgba(255, 252, 17, 0.72);
+}
 /*STATISTIC BLOCK END */
 
 /*STATISTIC BLOCK MEDIA QUERIES*/
@@ -894,6 +962,166 @@ and (max-device-width : 568px) {
   .statistic h2 {
     font-size: 20px;
   }
+  .first_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: -7%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .second_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 9%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .third_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fourth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 38%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fifth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 52%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .six_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 66%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .seven_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 76%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .eight_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 85%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+    .statistic {
+      height: 80%;
+    }
+    .statistic h2 {
+      font-size: 20px;
+    }
+    .first_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: -7%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .second_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 9%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .third_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 25%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fourth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 38%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fifth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 52%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .six_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 66%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .seven_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 76%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .eight_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 85%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
 }
 
 @media only screen
@@ -905,6 +1133,172 @@ and (max-device-width : 667px) {
   .statistic h2 {
     font-size: 20px;
   }
+  .statistic {
+    height: 80%;
+  }
+  .statistic h2 {
+    font-size: 20px;
+  }
+  .first_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: -7%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .second_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 9%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .third_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fourth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 38%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fifth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 52%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .six_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 66%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .seven_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 76%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .eight_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 85%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+    .statistic {
+      height: 80%;
+    }
+    .statistic h2 {
+      font-size: 20px;
+    }
+    .first_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: -7%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .second_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 9%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .third_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 25%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fourth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 38%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fifth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 52%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .six_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 66%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .seven_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 76%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .eight_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 85%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
 }
 
 @media only screen
@@ -916,6 +1310,172 @@ and (max-device-width : 736px) {
   .statistic h2 {
     font-size: 20px;
   }
+  .statistic {
+    height: 80%;
+  }
+  .statistic h2 {
+    font-size: 20px;
+  }
+  .first_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: -7%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .second_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 9%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .third_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fourth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 38%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fifth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 52%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .six_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 66%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .seven_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 76%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .eight_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 85%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+    .statistic {
+      height: 80%;
+    }
+    .statistic h2 {
+      font-size: 20px;
+    }
+    .first_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: -7%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .second_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 9%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .third_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 25%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fourth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 38%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fifth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 52%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .six_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 66%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .seven_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 76%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .eight_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 85%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
 }
 
 @media only screen
@@ -927,6 +1487,257 @@ and (max-device-width : 1024px)  {
   .statistic h2 {
     font-size: 20px;
   }
+  .statistic {
+    height: 80%;
+  }
+  .statistic h2 {
+    font-size: 20px;
+  }
+  .first_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: -7%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .second_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 9%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+
+  .third_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fourth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 38%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .fifth_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 52%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .six_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 66%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .seven_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 76%;
+    left: 15%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+  .eight_logo {
+    font-size: 160px;
+    font-family: "BebasNeueCyrillic";
+    position: absolute;
+    z-index: -1;
+    top: 85%;
+    left: 60%;
+    color: rgba(255, 252, 17, 0.72);
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+    .statistic {
+      height: 80%;
+    }
+    .statistic h2 {
+      font-size: 20px;
+    }
+    .first_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: -7%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .second_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 9%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .third_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 25%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fourth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 38%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fifth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 52%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .six_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 66%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .seven_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 76%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .eight_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 85%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .statistic {
+      height: 80%;
+    }
+    .statistic h2 {
+      font-size: 20px;
+    }
+    .first_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: -7%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .second_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 9%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+
+    .third_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 25%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fourth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 38%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .fifth_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 52%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .six_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 66%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .seven_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 76%;
+      left: 15%;
+      color: rgba(255, 252, 17, 0.72);
+    }
+    .eight_logo {
+      font-size: 160px;
+      font-family: "BebasNeueCyrillic";
+      position: absolute;
+      z-index: -1;
+      top: 85%;
+      left: 80%;
+      color: rgba(255, 252, 17, 0.72);
+    }
 }
 
 /*STATISTIC BLOCK MEDIA QUERIES END*/
