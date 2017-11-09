@@ -68,6 +68,19 @@ header h3 {
   margin: 0 0 21.6px 0;
 }
 
+.header_numbers a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header_numbers a:hover {
+  color: rgb(255, 252, 17);
+}
+
+.header_numbers a:visited {
+  color: #fff;
+}
+
 .sign_form {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.71);
@@ -645,8 +658,8 @@ and (max-device-width : 1024px)  {
   margin: 22% 0 0 0;
   background-color: #bebebe;
   opacity: 0.741;
-  width: 294px;
-  height: 420px;
+  width: 50%;
+  height: 50%;
   border-radius: 25px;
 }
 
@@ -665,6 +678,7 @@ and (max-device-width : 1024px)  {
 
 .transportation_form .form_name, .transportation_form .form_surname, .transportation_form .form_phone {
   margin: 25px 0 0 0;
+  width: 80%;
 }
 
 .transportation_form button {
