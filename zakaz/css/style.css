@@ -1,0 +1,2127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+   font-family: BebasNeueCyrillic; /* Имя шрифта */
+   src: url(../fonts/BebasNeueCyrillic.ttf); /* Путь к файлу со шрифтом */
+  }
+
+@font-face {
+  font-family: BDP;
+  src url(../fonts/BDP.ttf);
+}
+
+@font-face {
+  font-family: AvantGardeGothicC;
+  src: url(../fonts/AvantGardeGothicC.otf);
+}
+
+/*HEADER*/
+
+header {
+  height:1000px;
+  display: flex;
+}
+
+header {
+  width: 100%;
+  background-image: url(../images/header_bg.png);
+  background-size: cover;
+}
+
+header h3 {
+  margin: 20px 20px;
+}
+
+.header_sign {
+  margin: 7.75% 0 0 2.95%;
+}
+
+.header_sign h2 {
+  font-size: 48px;
+  font-family: "BebasNeueCyrillic";
+  color: #fff;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.header_numbers {
+  margin: 3.56% 10.6% 0 0;
+}
+
+.header_numbers .mts, .header_numbers .kyivstar {
+  margin: 0 12.4px 0 0;
+}
+
+.russian_flag {
+  margin: 0 16.4px 0 0;
+}
+
+.header_numbers h3 {
+  font-size: 24px;
+  font-family: "BDP";
+  color: rgb(254, 255, 254);
+  line-height: 1.2;
+  margin: 0 0 21.6px 0;
+}
+
+.sign_form {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.71);
+  width: 356px;
+  height: 449px;
+  margin: 3% 0 0 4.19%;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #000;
+  opacity: 1;
+}
+
+.sign_form h2 {
+  font-size: 48px;
+  font-family: "BebasNeueCyrillic";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.form_name, .form_surname, .form_phone, .form_date, .form_city, .form_adress {
+  border-radius: 10px;.
+  color: #000 !important;
+  width: 241px;
+  height: 48px;
+  background-color: #e8e8e8 !important;
+  opacity: 1 !important;
+  font-size: 14px;
+  font-family: "BebasNeueRegular";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-indent: 20.5px;
+  margin: 10px 0 0 0;
+  border: 0;
+}
+
+.form_adress {
+  margin: 10px 0 15px 0;
+}
+
+.sign_form button {
+  border-radius: 10px !important;
+  background-color: rgb(50, 49, 49) !important;
+  width: 187px;
+  height: 62px;
+  font-size: 24px !important;
+  font-family: "BebasNeueCyrillic" !important;
+  color: rgb(239, 239, 239) !important;
+  line-height: 1.2 !important;
+  cursor: pointer;
+}
+
+.under_form_sign {
+  margin: 49% 0 0 -14%;
+  clear: both;
+}
+
+.under_form_sign h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-family: "BebasNeueCyrillic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+.perevozkovvv {
+  clear: both;
+}
+
+.perevozkovvv h4 {
+  font-size: 30px;
+  font-family: "AvantGardeGothicC";
+  color: rgba(255, 252, 17, 0.89);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.company_name {
+  font-size: 30px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 252, 17, 0.878);
+  line-height: 1.2;
+  margin: 5% 0 0 12%;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+}
+
+.order {
+  font-size: 48px;
+  font-family: "BebasNeueCyrillic";
+  color: #ff7758 !important;
+  line-height: 1.5;
+  margin: 13% 0 0 50% !important;
+  -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+}
+
+/*HEADER END*/
+
+/*HEADER MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .header_sign h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .header_numbers h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .header_numbers img {
+    width: 13%;
+    height: 13%;
+  }
+  .kyivstar, .russian_flag {
+    margin-top: 0;
+  }
+  .sign_form {
+    width: 90%;
+    height: 85%;
+  }
+  .sign_form form {
+    margin-bottom: 10%;
+  }
+  .sign_form h2 {
+    font-size: 24px;
+  }
+  .form_name, .form_surname, .form_phone, .form_date, .form_city, .form_adress {
+    border-radius: 10px;.
+    color: #000 !important;
+    width: 90%;
+    height: 30px;
+    background-color: #e8e8e8 !important;
+    opacity: 1 !important;
+    font-size: 14px;
+    font-family: "BebasNeueRegular";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-indent: 20.5px;
+    margin: 10px 0 0 0;
+    border: 0;
+  }
+  .form_adress {
+    margin-bottom: 5%;
+  }
+  .under_form_sign  {
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 0;
+  }
+  .perevozkovvv {
+    text-align: center;
+  }
+  .perevozkovvv h4 {
+    font-size: 24px;
+  }
+  .company_name {
+    font-size: 28px;
+    margin: 0;
+  }
+  .perevozkovvv img {
+    width: 40%;
+    height: 40%;
+  }
+  .order {
+    font-size: 24px;
+    padding: 0 0 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .sign_form {
+    width: 90%;
+    height: 75%;
+  }
+  .sign_form form {
+    margin-bottom: 10%;
+  }
+  .form_adress {
+    margin-bottom: 5px;
+  }
+  .sign_form button {
+    height: 70%;
+  }
+  .under_form_sign h2 {
+    font-size: 18px;
+  }
+  .perevozkovvv h4 {
+    font-size: 20px;
+  }
+  .perevozkovvv img {
+    width: 20%;
+    height: 40%;
+  }
+  .perevozkovvv h3 {
+    font-size: 20px;
+  }
+  .order {
+    font-size: 18px;
+    padding: 0 0 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .header_sign h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .header_numbers h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .header_numbers img {
+    width: 13%;
+    height: 13%;
+  }
+  .kyivstar, .russian_flag {
+    margin-top: 0;
+  }
+  .sign_form {
+    width: 90%;
+    height: 85%;
+  }
+  .sign_form form {
+    margin-bottom: 10%;
+  }
+  .sign_form h2 {
+    font-size: 24px;
+  }
+  .form_name, .form_surname, .form_phone, .form_date, .form_city, .form_adress {
+    border-radius: 10px;.
+    color: #000 !important;
+    width: 90%;
+    height: 30px;
+    background-color: #e8e8e8 !important;
+    opacity: 1 !important;
+    font-size: 14px;
+    font-family: "BebasNeueRegular";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-indent: 20.5px;
+    margin: 10px 0 0 0;
+    border: 0;
+  }
+  .form_adress {
+    margin-bottom: 5%;
+  }
+  .under_form_sign  {
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 0;
+  }
+  .perevozkovvv {
+    text-align: center;
+  }
+  .perevozkovvv h4 {
+    font-size: 24px;
+  }
+  .company_name {
+    font-size: 28px;
+    margin: 0;
+  }
+  .perevozkovvv img {
+    width: 40%;
+    height: 40%;
+  }
+  .order {
+    font-size: 24px;
+    padding: 0 0 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .header_sign h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .header_numbers h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .header_numbers img {
+    width: 13%;
+    height: 13%;
+  }
+  .kyivstar, .russian_flag {
+    margin-top: 0;
+  }
+  .sign_form {
+    width: 90%;
+    height: 85%;
+  }
+  .sign_form form {
+    margin-bottom: 10%;
+  }
+  .sign_form h2 {
+    font-size: 24px;
+  }
+  .form_name, .form_surname, .form_phone, .form_date, .form_city, .form_adress {
+    border-radius: 10px;.
+    color: #000 !important;
+    width: 90%;
+    height: 30px;
+    background-color: #e8e8e8 !important;
+    opacity: 1 !important;
+    font-size: 14px;
+    font-family: "BebasNeueRegular";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-indent: 20.5px;
+    margin: 10px 0 0 0;
+    border: 0;
+  }
+  .form_adress {
+    margin-bottom: 5%;
+  }
+  .under_form_sign  {
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 0;
+  }
+  .perevozkovvv {
+    text-align: center;
+  }
+  .perevozkovvv h4 {
+    font-size: 24px;
+  }
+  .company_name {
+    font-size: 28px;
+    margin: 0;
+  }
+  .perevozkovvv img {
+    width: 40%;
+    height: 40%;
+  }
+  .order {
+    font-size: 24px;
+    padding: 0 0 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .header_sign h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .header_numbers h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .header_numbers img {
+    width: 13%;
+    height: 13%;
+  }
+  .kyivstar, .russian_flag {
+    margin-top: 0;
+  }
+  .sign_form {
+    width: 90%;
+    height: 85%;
+  }
+  .sign_form form {
+    margin-bottom: 10%;
+  }
+  .sign_form h2 {
+    font-size: 24px;
+  }
+  .form_name, .form_surname, .form_phone, .form_date, .form_city, .form_adress {
+    border-radius: 10px;.
+    color: #000 !important;
+    width: 90%;
+    height: 30px;
+    background-color: #e8e8e8 !important;
+    opacity: 1 !important;
+    font-size: 14px;
+    font-family: "BebasNeueRegular";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-indent: 20.5px;
+    margin: 10px 0 0 0;
+    border: 0;
+  }
+  .form_adress {
+    margin-bottom: 5%;
+  }
+  .under_form_sign  {
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 0;
+  }
+  .perevozkovvv {
+    text-align: center;
+  }
+  .perevozkovvv h4 {
+    font-size: 24px;
+  }
+  .company_name {
+    font-size: 28px;
+    margin: 0;
+  }
+  .perevozkovvv img {
+    width: 40%;
+    height: 40%;
+  }
+  .order {
+    font-size: 24px;
+    padding: 0 0 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*HEADER MEDIA QUERIES END*/
+
+/*ADVANTAGES BLOCK*/
+
+.advantages {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+}
+
+.mercedez {
+  margin: 80% 5% 0 0;
+}
+
+.mercedez_text {
+  font-size: 24px;
+  font-family: "BebasNeueCyrillic";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 16%;
+}
+
+/*ADVANTAGES BLOCK END*/
+
+/*ADVANTAGES MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .advantages {
+    text-align: center;
+  }
+  .mercedez {
+    margin: 20% 0 0 0;
+  }
+  .mercedez_text {
+    font-size: 16px;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .advantages {
+    text-align: center;
+  }
+  .mercedez {
+    margin: 20% 0 0 0;
+  }
+  .mercedez_text {
+    font-size: 16px;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .advantages {
+    text-align: center;
+  }
+  .mercedez {
+    margin: 20% 0 0 0;
+  }
+  .mercedez_text {
+    font-size: 16px;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .advantages {
+    text-align: center;
+  }
+  .mercedez {
+    margin: 20% 0 0 0;
+  }
+  .mercedez_text {
+    font-size: 16px;
+  }
+}
+
+/*ADVANTAGES MEDIA QUERIES END*/
+
+/*MAP BLOCK*/
+
+.map {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../images/map_bg.png);
+  background-size: cover;
+  padding-top: 1px;
+  overflow-x: hidden;
+}
+
+.map .container .transportation_map {
+  margin: 22% 0 0 0;
+  width: 500px;
+}
+
+.map .container .row {
+  margin: 10% 0 0 0;
+}
+
+.map .container .transportation_map h2 {
+  font-size: 30px;
+  font-family: "AvantGardeGothicC";
+  color: rgb(255, 252, 17);
+  line-height: 1.2;
+  text-align: right;
+  margin: 0 -12% 0 0;
+}
+
+.map .container .transportation_map ul li {
+  margin: 0 0 0 -30%;
+  font-size: 30px;
+  font-family: "AvantGardeGothicC";
+  color: rgb(255, 252, 17);
+  line-height: 1.2;
+  list-style-type: none;
+  text-align: right;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+.map .container .transportation_form {
+  margin: 22% 0 0 0;
+  background-color: #bebebe;
+  opacity: 0.741;
+  width: 294px;
+  height: 420px;
+  border-radius: 25px;
+}
+
+.transportation_sign {
+  margin-top: 36.5px;
+}
+
+.transportation_form h2 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "AvantGardeGothicC";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.transportation_form .form_name, .transportation_form .form_surname, .transportation_form .form_phone {
+  margin: 25px 0 0 0;
+}
+
+.transportation_form button {
+  background-color: #ed2e2e;
+  opacity: 1;
+  width: 100px;
+  margin: 25px 0 0 0;
+  cursor: pointer;
+}
+
+/*MAP BLOCK END*/
+
+/*MAP BLOCK MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .map .container .transportation_map {
+    text-align: center;
+  }
+  .map .container .transportation_map h2 {
+    margin-top: 50%;
+    font-size: 18px;
+    width: 5%;
+    margin-left: 30%;
+  }
+  .map .container .transportation_map img {
+    width: 40%;
+    height: 40%;
+  }
+  .map .container .transportation_map ul {
+    height: 0;
+  }
+  .map .container .transportation_map ul li{
+    font-size: 18px;
+    width: 5%;
+  }
+  .map .container .transportation_form {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .map .container .transportation_form .transportation_sign {
+    margin-top: 0;
+  }
+  .map .container .transportation_form .transportation_sign h2 {
+    margin-bottom: 0;
+  }
+  .transportation_form .form_name, .transportation_form .form_surname, .transportation_form .form_phone {
+    margin-top: 3%;
+    height: 30px;
+  }
+  .map .container .transportation_form button {
+    margin-top: 3%;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .map .container .transportation_map {
+    text-align: center;
+  }
+  .map .container .transportation_map h2 {
+    margin-top: 50%;
+    font-size: 18px;
+    width: 5%;
+    margin-left: 30%;
+  }
+  .map .container .transportation_map img {
+    width: 40%;
+    height: 40%;
+  }
+  .map .container .transportation_map ul {
+    height: 0;
+  }
+  .map .container .transportation_map ul li{
+    font-size: 18px;
+    width: 5%;
+  }
+  .map .container .transportation_form {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .map .container .transportation_form .transportation_sign {
+    margin-top: 0;
+  }
+  .map .container .transportation_form .transportation_sign h2 {
+    margin-bottom: 0;
+  }
+  .transportation_form .form_name, .transportation_form .form_surname, .transportation_form .form_phone {
+    margin-top: 3%;
+    height: 30px;
+  }
+  .map .container .transportation_form button {
+    margin-top: 3%;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .map .container .transportation_map {
+    text-align: center;
+  }
+  .map .container .transportation_map h2 {
+    margin-top: 50%;
+    font-size: 18px;
+    width: 5%;
+    margin-left: 30%;
+  }
+  .map .container .transportation_map img {
+    width: 40%;
+    height: 40%;
+  }
+  .map .container .transportation_map ul {
+    height: 0;
+  }
+  .map .container .transportation_map ul li{
+    font-size: 18px;
+    width: 5%;
+  }
+  .map .container .transportation_form {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .map .container .transportation_form .transportation_sign {
+    margin-top: 0;
+  }
+  .map .container .transportation_form .transportation_sign h2 {
+    margin-bottom: 0;
+  }
+  .transportation_form .form_name, .transportation_form .form_surname, .transportation_form .form_phone {
+    margin-top: 3%;
+    height: 30px;
+  }
+  .map .container .transportation_form button {
+    margin-top: 3%;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .map .container .transportation_map {
+    text-align: center;
+  }
+  .map .container .transportation_map h2 {
+    margin-top: 50%;
+    font-size: 18px;
+    width: 5%;
+    margin-left: 30%;
+  }
+  .map .container .transportation_map img {
+    width: 40%;
+    height: 40%;
+  }
+  .map .container .transportation_map ul {
+    height: 0;
+  }
+  .map .container .transportation_map ul li{
+    font-size: 18px;
+    width: 5%;
+  }
+  .map .container .transportation_form {
+    width: 90%;
+    height: 40%;
+    text-align: center;
+    margin-top: 80%;
+  }
+  .map .container .transportation_form .transportation_sign {
+    margin-top: 0;
+  }
+  .map .container .transportation_form .transportation_sign h2 {
+    margin-bottom: 0;
+  }
+  .transportation_form .form_name, .transportation_form .form_surname, .transportation_form .form_phone {
+    margin-top: 3%;
+    height: 30px;
+  }
+  .map .container .transportation_form button {
+    margin-top: 3%;
+  }
+}
+
+/*MAP BLOCK MEDIA QUERIES END*/
+
+/*STATISTIC BLOCK */
+
+.statistic {
+  height: 1500px;
+  background-color: #fff;
+}
+
+.statistic h2 {
+  margin: 75px 0 0 0;
+  font-size: 48px;
+  font-family: "BebasNeueCyrillic";
+  color: #000;
+  line-height: 1.5;
+}
+
+.first_logo {
+  font-size: 220px;
+  top: -50%;
+}
+.second_number_logo {
+  font-size: 220px;
+  top: -50%;
+}
+
+/*STATISTIC BLOCK END */
+
+/*STATISTIC BLOCK MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .statistic {
+    height: 80%;
+  }
+  .statistic h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .statistic {
+    height: 80%;
+  }
+  .statistic h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .statistic {
+    height: 80%;
+  }
+  .statistic h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .statistic {
+    height: 80%;
+  }
+  .statistic h2 {
+    font-size: 20px;
+  }
+}
+
+/*STATISTIC BLOCK MEDIA QUERIES END*/
+
+/*COMMENTS BLOCK*/
+
+.comments {
+  background-image: url(../images/comments_bg.png);
+  background-size: cover;
+  width: 100%;
+  height: 608px;
+  padding-top: 1px;
+}
+
+.comments .container .row {
+  margin: 15% 0 0 0;
+}
+
+.comments p {
+  font-size: 18px;
+  font-family: "AvantGardeGothicC";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.comments img {
+  border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+.comments_btn .btn-default {
+  border-radius: 10px !important;
+  height: 34px;
+  margin-top: 5%;
+  padding-top: 0px;
+  background-color: #ffe622;
+  cursor: pointer;
+}
+
+/*COMMENTS BLOCK END*/
+
+/*COMMENTS BLOCK MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .comments p {
+    font-size: 9px;
+    font-family: "AvantGardeGothicC";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  .comments img {
+    border-radius: 50%;
+  	height: 45%;
+  	width: 22.5%;
+  }
+  .comment {
+    height: 50%;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .comments img {
+    border-radius: 50%;
+  	height: 30%;
+  	width: 15%;
+  }
+  .comments_btn .btn-default {
+    margin-top: 0;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .comments p {
+    font-size: 9px;
+    font-family: "AvantGardeGothicC";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  .comments img {
+    border-radius: 50%;
+    height: 45%;
+    width: 22.5%;
+  }
+  .comment {
+    height: 50%;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  .comments p {
+    font-size: 9px;
+    font-family: "AvantGardeGothicC";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  .comments img {
+    border-radius: 50%;
+    height: 65%;
+    width: 42.5%;
+  }
+  .comment {
+    height: 50%;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .comments p {
+    font-size: 9px;
+    font-family: "AvantGardeGothicC";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  .comments img {
+    border-radius: 50%;
+    height: 45%;
+    width: 22.5%;
+  }
+  .comment {
+    height: 50%;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+  .comments p {
+    font-size: 9px;
+    font-family: "AvantGardeGothicC";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  .comments img {
+    border-radius: 50%;
+    height: 65%;
+    width: 42.5%;
+  }
+  .comment {
+    height: 50%;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .comments p {
+    font-size: 9px;
+    font-family: "AvantGardeGothicC";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  .comments img {
+    border-radius: 50%;
+  	height: 45%;
+  	width: 22.5%;
+  }
+  .comment {
+    height: 50%;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .comments img {
+    border-radius: 50%;
+  	height: 30%;
+  	width: 15%;
+  }
+  .comments_btn .btn-default {
+    margin-top: 0;
+  }
+}
+
+/*COMMENTS BLOCK MEDIA QUERIES*/
+
+/*CALLBACK BLOCK*/
+
+.callback {
+  background-image: url(../images/callback_bg.png);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  margin: -5% 0 0 0;
+}
+
+.callback_form {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.71);
+  width: 356px;
+  height: 449px;
+  margin: 50% 0 0 4.19%;
+}
+
+.callback_form .form_name {
+  margin-top: 15%;
+}
+
+.callback_form form input {
+  border-radius: 10px;.
+  color: #000 !important;
+  width: 241px;
+  height: 48px;
+  background-color: #e8e8e8 !important;
+  opacity: 1 !important;
+  font-size: 14px;
+  font-family: "BebasNeueRegular";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-indent: 20.5px;
+  margin: 40px 0 0 0;
+  border: 0;
+}
+
+.callback_form button {
+  border-radius: 10px !important;
+  background-color: rgb(50, 49, 49) !important;
+  width: 187px;
+  height: 62px;
+  font-size: 24px !important;
+  font-family: "BebasNeueCyrillic" !important;
+  color: rgb(239, 239, 239) !important;
+  line-height: 1.2 !important;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.callback h2 {
+  font-size: 48px;
+  font-family: "BebasNeueCyrillic";
+  color: rgb(239, 239, 239);
+  line-height: 1.2;
+  text-align: center;
+  margin: 75% 0 0 0;
+}
+
+.callback_order {
+  font-size: 48px;
+  font-family: "BebasNeueCyrillic";
+  color: #ff7758 !important;
+  line-height: 1.5;
+  margin: 9% 0 0 50% !important;
+  -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+}
+
+/*CALLBACK BLOCK END*/
+
+/*CALLBACK BLOCK MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .callback {
+    margin: -15% 0 0 0;
+  }
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 70%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 10%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+  }
+  .callback_form button {
+    margin-top: 2%;
+  }
+  .callback h2 {
+    font-size: 24px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(239, 239, 239);
+    line-height: 1.2;
+    text-align: center;
+    margin: 40% 0 0 0;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 60% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 50%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 4%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 10% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .callback {
+    margin: -15% 0 0 0;
+  }
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 70%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 10%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+  }
+  .callback_form button {
+    margin-top: 2%;
+  }
+  .callback h2 {
+    font-size: 24px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(239, 239, 239);
+    line-height: 1.2;
+    text-align: center;
+    margin: 40% 0 0 0;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 60% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 50%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 4%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 10% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .callback {
+    margin: -15% 0 0 0;
+  }
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 70%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 10%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+  }
+  .callback_form button {
+    margin-top: 2%;
+  }
+  .callback h2 {
+    font-size: 24px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(239, 239, 239);
+    line-height: 1.2;
+    text-align: center;
+    margin: 40% 0 0 0;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 60% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 50%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 4%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 10% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .callback {
+    margin: -15% 0 0 0;
+  }
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 70%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 10%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+  }
+  .callback_form button {
+    margin-top: 2%;
+  }
+  .callback h2 {
+    font-size: 24px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(239, 239, 239);
+    line-height: 1.2;
+    text-align: center;
+    margin: 40% 0 0 0;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 60% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .callback_form {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 90%;
+    height: 50%;
+    margin: 50% 0 0 4.19%;
+  }
+  .callback .callback_form .callback_name {
+    margin-top: 4%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_surname {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback .callback_form .callback_phone {
+    margin-top: 2%;
+    width: 70%;
+  }
+  .callback_order {
+    font-size: 48px;
+    font-family: "BebasNeueCyrillic";
+    color: #ff7758 !important;
+    line-height: 1.5;
+    margin: 10% 0 0 50% !important;
+    -moz-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -webkit-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+    -ms-transform: matrix( 0.99180662047378,-0.12774829777492,0.12774829777492,0.99180662047378,0,0);
+  }
+}
+/*CALLBACK BLOCK MEDIA QUERIES*/
+
+/*ABOUT BLOCK*/
+.about {
+  background-color: #fff;
+  height: 1000px;
+}
+
+.first_about {
+  margin-top: 15%;
+}
+
+{
+  font-size: 30px;
+  font-family: "BebasNeueCyrillic";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+}
+
+.about p {
+  font-size: 30px;
+  font-family: "BebasNeueCyrillic";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: right;
+}
+
+.second_about {
+  margin-top: 2%;
+}
+
+.second_about img {
+  margin-top: -40%;
+}
+
+.second_about p {
+  text-align: left;
+}
+
+.third_about p {
+  margin-top: 23%;
+}
+/*ABOUT BLOCK END*/
+
+/*ABOUT BLOCK MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .first_about img {
+    width: 50%;
+    height: 75%;
+  }
+  .first_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+  .second_about img {
+    width: 150px;
+    height: 150px;
+    margin-top: -180%;
+  }
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 60%;
+  }
+  .third_about img {
+    width: 150px;
+    height: 150px;
+  }
+  .third_about p {
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .about {
+    background-color: #fff;
+    height: 95%;
+  }
+
+  .first_about {
+    margin-top: 15%;
+  }
+  .first_about img {
+    width: 150px;
+    height: 150px;
+  }
+  {
+    font-size: 30px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+
+  .about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+
+  .second_about img {
+    width: 150px;
+    height: 150px;
+    margin-top: -70%;
+  }
+
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 30%;
+  }
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .first_about img {
+    width: 50%;
+    height: 75%;
+  }
+  .first_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+  .second_about img {
+    width: 150px;
+    height: 150px;
+    margin-top: -180%;
+  }
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 60%;
+  }
+  .third_about img {
+    width: 150px;
+    height: 150px;
+  }
+  .third_about p {
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  .about {
+    background-color: #fff;
+    height: 95%;
+  }
+
+  .first_about {
+    margin-top: 15%;
+  }
+  .first_about img {
+    width: 150px;
+    height: 150px;
+  }
+  {
+    font-size: 30px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+
+  .about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+
+  .second_about img {
+    width: 150px;
+    height: 150px;
+    margin-top: -70%;
+  }
+
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 30%;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .first_about img {
+    width: 50%;
+    height: 75%;
+  }
+  .first_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+  .second_about img {
+    width: 150px;
+    height: 150px;
+    margin-top: -180%;
+  }
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 60%;
+  }
+  .third_about img {
+    width: 150px;
+    height: 150px;
+  }
+  .third_about p {
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+  .about {
+    background-color: #fff;
+    height: 95%;
+  }
+
+  .first_about {
+    margin-top: 15%;
+  }
+  .first_about img {
+    width: 150px;
+    height: 150px;
+  }
+  {
+    font-size: 30px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+
+  .about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+
+  .second_about img {
+    width: 150px;
+    height: 150px;
+    margin-top: -70%;
+  }
+
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 30%;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .first_about img {
+    width: 200px;
+    height: 200px;
+  }
+  .first_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+  .second_about img {
+    width: 180px;
+    height: 180px;
+    margin-top: -70%;
+  }
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 40%;
+  }
+  .third_about img {
+    width: 200px;
+    height: 200px;
+  }
+  .third_about p {
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .about {
+    background-color: #fff;
+    height: 95%;
+  }
+
+  .first_about {
+    margin-top: 15%;
+  }
+  .first_about img {
+    width: 150px;
+    height: 150px;
+  }
+  {
+    font-size: 30px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+
+  .about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: right;
+  }
+
+  .second_about img {
+    width: 150px;
+    height: 150px;
+    margin-top: -70%;
+  }
+
+  .second_about p {
+    font-size: 20px;
+    font-family: "BebasNeueCyrillic";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 30%;
+  }
+}
+/*ABOUT BLOCK MEDIA QUERIES END*/
+
+/*VIDEO*/
+
+.video_block {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.video_block iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video_block .skew:before {
+  content: '';
+  position: absolute;
+  top: -5%;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 15%;
+  background: #fff;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+  z-index: 2;
+}
+
+.video_block .skew:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  overflow: hidden;
+  width: 100%;
+  height: 13.5%;
+  background: #ccc;
+  -webkit-transform: skewY(3deg);
+  -moz-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  -o-transform: skewY(3deg);
+  transform: skewY(3deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+  z-index: 2;
+}
+
+/*VIDEO END*/
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: #ccc;
+}
+
+footer img {
+  margin-top: 10%;
+}
+
+footer ul li {
+  display: inline;
+  font-size: 34px;
+}
+
+footer ul li .fa-whatsapp {
+  height: 60px;
+	width: 60px;
+	padding: 10px;
+  border: 3.5px solid #38bd4b;
+	border-radius: 50%;
+	color: #38bd4b;
+}
+
+footer ul li .fa-youtube-play {
+  height: 60px;
+	width: 60px;
+	padding: 10px;
+  border: 3.5px solid #e12603;
+	border-radius: 50%;
+	color: #e12603;
+}
+
+footer ul li .fa-facebook {
+  height: 60px;
+	width: 60px;
+	padding: 10px 10px 10px 15px;
+  border: 3.5px solid #546ca6;
+	border-radius: 50%;
+	color: #546ca6;
+}
+
+footer ul li .fa-facebook {
+  height: 60px;
+	width: 60px;
+	padding: 10px 10px 10px 15px;
+  border: 3.5px solid #546ca6;
+	border-radius: 50%;
+	color: #546ca6;
+}
+
+footer ul li .fa-google-plus {
+  height: 60px;
+	width: 60px;
+	padding: 10px 10px 10px 8px;
+  border: 3.5px solid #d75947;
+	border-radius: 50%;
+	color: #d75947;
+}
+
+footer ul li .fa-instagram {
+  height: 60px;
+	width: 60px;
+	padding: 10px 10px 10px 12px;
+  border: 3.5px solid #8c50d9;
+	border-radius: 50%;
+	color: #8c50d9;
+}
+
+/*FOOTER END*/
+
+/*FOOTER MEDIA QUERIES*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  footer {
+    height: 100%;
+  }
+  footer .container .row .col-lg-6{
+    text-align: center !important;
+  }
+  footer .container .row img {
+    margin-top: 50%;
+    width: 40%;
+    height: 60%;
+  }
+  footer ul {
+    width: 100%;
+  }
+  footer ul li {
+    display: inline;
+    font-size: 17px;
+  }
+  footer .social_list {
+    margin-top: 18%;
+    text-align: center;
+  }
+  footer ul li .fa-whatsapp {
+    height: 40px;
+  	width: 40px;
+  	padding: 7px 5px 5px 7px;
+    border: 3.5px solid #38bd4b;
+  	border-radius: 50%;
+  	color: #38bd4b;
+  }
+
+  footer ul li .fa-youtube-play {
+    height: 40px;
+  	width: 40px;
+  	padding: 7px 5px 5px 8px;
+    border: 3.5px solid #e12603;
+  	border-radius: 50%;
+  	color: #e12603;
+  }
+
+  footer ul li .fa-facebook {
+    height: 40px;
+  	width: 40px;
+  	padding: 7px 5px 5px 12px;
+    border: 3.5px solid #546ca6;
+  	border-radius: 50%;
+  	color: #546ca6;
+  }
+
+  footer ul li .fa-google-plus {
+    height: 40px;
+  	width: 40px;
+  	padding: 7px 5px 5px 8px;
+    border: 3.5px solid #d75947;
+  	border-radius: 50%;
+  	color: #d75947;
+  }
+  footer ul li .fa-instagram {
+    height: 40px;
+  	width: 40px;
+  	padding: 7px 5px 5px 10px;
+    border: 3.5px solid #8c50d9;
+  	border-radius: 50%;
+  	color: #8c50d9;
+  }
+}
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  footer {
+    height: 100%;
+  }
+}
+
+/*FOOTER MEDIA QUERIES END*/
