@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ridge Cargo - faster than lighting</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="app.css">
+<!--web-fonts-->
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+<!--//web-fonts-->
+<!--//fonts-->
+</head>
+<body>
+<div class="banner-layout" id="home">
+		<!--Top-Bar-->
+	<div class="header">
+		<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a  href="index.html">Ridge Cargo</a></h1>
+					</div>
+					<div class="top-nav-text">
+						<div class="nav-contact-w3ls"><span class="glyphicon glyphicon glyphicon-phone" aria-hidden="true"></span><p>Зателефонуйте нам <br> <span class="call"><a href="tel:+380631150798">+380631150798</a></span></p></div>
+					</div>
+					<!-- navbar-header -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="hvr-underline-from-center active scroll" href="index.html">На головну</a></li>
+							<li><a href="#features" class="hvr-underline-from-center scroll">Про нас</a></li>
+							<li><a href="#capabilities" class="hvr-underline-from-center scroll">Особливості</a></li>
+							<li><a href="#team" class="hvr-underline-from-center scroll scroll">Команда</a></li>
+							<li><a href="#gallery" class="hvr-underline-from-center scroll scroll">Галерея</a></li>
+							<li><a href="#contact" class="hvr-underline-from-center scroll scroll">Обчислення маршруту</a>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</nav>
+
+	</div>
+		<!--//Top-Bar-->
+	<div class="modal about-modal w3-agileits fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body login-page "><!-- login-page -->
+									<div class="login-top sign-top">
+										<div class="agileits-login">
+										<h5>Register</h5>
+										<form action="#" method="post">
+											<input type="text" name="Username" placeholder="Username" required=""/>
+											<input type="email"  name="Email" placeholder="Email" required=""/>
+											<input type="password" name="Password" placeholder="Password" required=""/>
+											<div class="wthree-text">
+												<ul>
+													<li>
+														<label class="anim">
+															<input type="checkbox" class="checkbox">
+															<span> I accept the terms of use</span>
+														</label>
+													</li>
+												</ul>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="w3ls-submit">
+												<input type="submit" value="Register">
+											</div>
+										</form>
+
+										</div>
+									</div>
+						</div>
+				</div> <!-- //login-page -->
+			</div>
+		</div>
+	<!-- //modal -->
+<!--banner-->
+		<!--Slider-->
+			<div class="w3l_banner_info">
+				<div class="col-md-7 slider">
+					<div class="callbacks_container">
+								<ul class="rslides" id="slider3">
+									<li>
+										<div class="slider_banner_info">
+											 <h4>Комфортна оплата</h4>
+											<p>Ви збережете кожну хвилину свого часу</p>
+										</div>
+									</li>
+									<li>
+										<div class="slider_banner_info">
+											<h4>Ми завжди раді клієнтам</h4>
+											<p>Оберіть найбльш комфортний спосіб доставки</p>
+										</div>
+									</li>
+									<li>
+										<div class="slider_banner_info">
+											<h4>Отримуйте більше</h4>
+											<p>Найсучасніші технології доставки</p>
+										</div>
+									</li>
+									<li>
+										<div class="slider_banner_info">
+											<h4>Клієнти понад усе</h4>
+											<p>Належне ставлення до вантажу</p>
+										</div>
+									</li>
+								</ul>
+					</div>
+				</div>
+				<div class="col-md-5 banner-form-agileinfo">
+					<form action="mail/mail.php" method="post" id="form">
+						<input type="text" class="email" name="name" placeholder="Ім'я" required="" autocomplete="off"/>
+						<input type="email" class="password" name="client_email" placeholder="Email" required=""/ autocomplete="off">
+						<select class="form-control option-w3ls" name="transport_to">
+								<option>Відправити з</option>
+								<option>Україна</option>
+								<option>Білорусія</option>
+								<option>Польша</option>
+								<option>Італія</option>
+								<option>Франція</option>
+								<option>Молдова</option>
+							</select>
+						<select class="form-control option-w3ls" name="transport_from">
+								<option>Відправити в</option>
+								<option>Україна</option>
+								<option>Білорусія</option>
+								<option>Польша</option>
+								<option>Італія</option>
+								<option>Франція</option>
+								<option>Молдова</option>
+							</select>
+						<select class="form-control option-w3ls" name="departure">
+								<option>Вид перевезення:</option>
+								<option>Наземним транспортом</option>
+								<option>Судном</option>
+								<option>Залізнодорожним поїздом</option>
+							</select>
+						<input type="submit" class="hvr-shutter-in-vertical" value="Відправити">
+					</form>
+				</div>
+		</div>
+			<!--//Slider-->
+			<div class="clearfix"></div>
+						</div>
+
+<!--//banner-->
+
+<!-- welcome -->
+	<div class="features" id="features">
+		<div class="container">
+			<h2 class="title-w3">Про нас</h2>
+		    <div class="w3-agile-top-info">
+			<div class="w3-welcome-grids">
+				<div class="col-md-7 w3-welcome-left">
+					<h5>Ми пропонуємо швидке і якісне вантажоперевезення</h5>
+					<p>Наша компанія доставить ваш вантаж якомога швидше, наскільки це можливо.</span></p>
+				</div>
+				<div class="col-md-5 w3ls-welcome-img1">
+					<img src="images/w1.jpg" alt="" />
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3-welcome-grids w3-welcome-bottom">
+				<div class="col-md-5 w3ls-welcome-img1 w3ls-welcome-img2">
+					<img src="images/w2.jpg" alt="" />
+				</div>
+				<div class="col-md-7 w3-welcome-left">
+					<h5>Наша компанія надає скидки постійним клієнтам</h5>
+					<p>Існує спеціальна система лояльності націлена на тих клієнтів, які користуються послугами компанії на постійній основі. Це означає, що у випадку наступних замовлень буде можливість гарно зекономити.</span></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- //welcome -->
+<!-- Stats -->
+	<div class="jarallax  stats-agileits" id="stats">
+		<div class="stats-info agileits layout">
+			<div class="col-md-3 agileits layout col-sm-3 stats-grid stats-grid-1">
+				<div class="numscroller agileits-layout" data-slno='1' data-min='0' data-max='3' data-delay='3' data-increment="2">15</div>
+				<div class="stat-info-w3ls">
+					<h4 class="agileits layout"><span>Роки</span> ведення бізнесу</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 agileits layout stats-grid stats-grid-2">
+				<div class="numscroller agileits-layout" data-slno='1' data-min='0' data-max='2012' data-delay='3' data-increment="2">2012</div>
+				<div class="stat-info-w3ls">
+					<h4 class="agileits layout"><span>Задоволенних</span> клієнтів</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid agileits layout stats-grid-3">
+				<div class="numscroller agileits-layout" data-slno='1' data-min='0' data-max='50' data-delay='3' data-increment="2">500</div>
+				<div class="stat-info-w3ls">
+					<h4 class="agileits layout"><span>Водіїв</span> по всій країні</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-4 agileits layout">
+				<div class="numscroller agileits-layout" data-slno='1' data-min='0' data-max='1535' data-delay='3' data-increment="2">1535</div>
+				<div class="stat-info-w3ls">
+					<h4 class="agileits layout"><span>Перевезень</span> за рік</h4>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+	</div>
+	<!-- //Stats -->
+
+<!-- capabilities -->
+	<div class="capabilities" id="capabilities">
+		<div class="container">
+			<h4 class="title-w3">Особливості</h4>
+			<div class="why-choose-agile-grids-top">
+				<div class="col-md-4 agileits-layout-grid">
+					<div class="wthree_agile_us leftw3ls">
+						<div class="col-xs-8 agile-why-text siml-w3ls">
+							<h4>Швидка доставка</h4>
+							<p></p>
+						</div>
+						<div class="col-xs-4 agile-why-text siml-w3ls">
+							<div class="wthree_features_grid left hvr-rectangle-out">
+								<i class="fa fa-plane" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="wthree_agile_us leftw3ls">
+						<div class="col-xs-8 agile-why-text siml-w3ls">
+							<h4>Великий вибір маршрутів</h4>
+							<p></p>
+						</div>
+						<div class="col-xs-4 agile-why-text siml-w3ls">
+							<div class="wthree_features_grid left hvr-rectangle-out">
+								<i class="fa fa-truck" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="wthree_agile_us leftw3ls">
+						<div class="col-xs-8 agile-why-text siml-w3ls">
+							<h4>Відповідальність</h4>
+							<p></p>
+						</div>
+						<div class="col-xs-4 agile-why-text siml-w3ls">
+							<div class="wthree_features_grid left hvr-rectangle-out">
+								<i class="fa fa-wrench" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 agileits-layout-grid mid-img-agileits">
+
+				</div>
+				<div class="col-md-4 agileits-layout-grid">
+					<div class="wthree_agile_us rightw3ls">
+					<div class="col-xs-4 agile-why-text simr-w3ls">
+							<div class="wthree_features_grid right hvr-rectangle-out">
+								<i class="fa fa-cogs" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-xs-8 agile-why-text two simr-w3ls">
+							<h4>Професійність</h4>
+							<p></p>
+						</div>
+
+						<div class="clearfix"> </div>
+					</div>
+					<div class="wthree_agile_us rightw3ls">
+					<div class="col-xs-4 agile-why-text simr-w3ls">
+							<div class="wthree_features_grid right hvr-rectangle-out">
+								<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-xs-8 agile-why-text two simr-w3ls">
+							<h4>Логістика</h4>
+							<p></p>
+						</div>
+
+						<div class="clearfix"> </div>
+					</div>
+					<div class="wthree_agile_us rightw3ls">
+					<div class="col-xs-4 agile-why-text simr-w3ls">
+							<div class="wthree_features_grid right hvr-rectangle-out">
+								<i class="fa fa-clock-o" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-xs-8 agile-why-text two simr-w3ls">
+							<h4>Пунктуальність</h4>
+							<p></p>
+						</div>
+
+						<div class="clearfix"> </div>
+					</div>
+
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+<!-- //capabilities -->
+<!--team-->
+<div class="team" id="team">
+			<div class="col-md-6 agile-team-grids">
+				<div class="col-md-6 team-grid">
+					<div class="team-img">
+						<img src="images/t1.jpg" class="img-responsive" alt=" " />
+						<figcaption class="overlay">
+								<h4>Олег Вітюк</h4>
+					<span>Здатний допомогти у будь-який час</span>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</figcaption>
+					</div>
+
+				</div>
+				<div class="col-md-6 team-grid">
+					<div class="team-img">
+						<img src="images/t2.jpg" class="img-responsive" alt=" " />
+						<figcaption class="overlay">
+							<h4>Віталій Кордюк</h4>
+					<span>Здатний допомогти у будь-який час</span>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</figcaption>
+					</div>
+
+				</div>
+				<div class="col-md-6 team-grid">
+					<div class="team-img">
+						<img src="images/t3.jpg" class="img-responsive" alt=" " />
+						<figcaption class="overlay">
+								<h4>Василь Денисюк</h4>
+					<span>Здатний допомогти у будь-який час</span>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</figcaption>
+					</div>
+
+				</div>
+				<div class="col-md-6 team-grid">
+					<div class="team-img">
+						<img src="images/t4.jpg" class="img-responsive" alt=" " />
+						<figcaption class="overlay">
+							  <h4>Петро Капелюшний</h4>
+					<span>Здатний допомогти у будь-який час</span>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</figcaption>
+					</div>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+	<div class="col-md-6 team-grid-text-agile">
+
+		    <h4 class="title-w3 two">Наша команда</h4>
+			<p>Наша команда - це справжня сім'я. Ми працюємо разом вже на протязі декількох років і немає жодних причин для того, щоб зупинятися в майбутньому.</p>
+			<p>Для нас немає значення, наскільки тяжко буде доставити ваш вантаж. Наша команда зробить все можливе, тільки щоб клієнт був задоволенний доставкою вантаж.</p>
+		</div>
+		<div class="clearfix"> </div>
+
+</div>
+<!--//team-->
+<!-- gallery -->
+		<div class="gallery"  id="gallery">
+			<div class="container">
+				<h4 class="title-w3">Галерея</h4>
+				<div id="jzBox" class="jzBox">
+					<div id="jzBoxNextBig"></div>
+					<div id="jzBoxPrevBig"></div>
+					<img src="#" id="jzBoxTargetImg" alt="">
+					<div id="jzBoxBottom">
+						<div id="jzBoxTitle"></div>
+						<div id="jzBoxCounter"></div>
+						<span id="jzBoxMoreItems">
+							<i class="glyphicon glyphicon-chevron-left" id="jzBoxPrev"></i> &nbsp;
+							<i class="glyphicon glyphicon-chevron-right" id="jzBoxNext"></i> &nbsp;
+						</span>
+						<i class="glyphicon glyphicon-remove-circle" id="jzBoxClose"></i>
+					</div>
+				</div>
+				<div class="gallery-grids-row">
+					<div class="col-md-4 gallery-grid">
+						<div class="wpf-demo-4">
+							<a href="images/g1.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g1.jpg" class="img-responsive" alt=" " />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="wpf-demo-4">
+							<a href="images/g2.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g2.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="wpf-demo-4">
+							<a href="images/g7.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g7.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="wpf-demo-4">
+							<a href="images/g3.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g3.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="wpf-demo-4">
+							<a href="images/g4.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g4.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="wpf-demo-4">
+							<a href="images/g6.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g6.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="wpf-demo-4">
+							<a href="images/g8.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g8.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="wpf-demo-4">
+							<a href="images/g5.jpg" class="jzBoxLink item-hover" title="">
+								<img src="images/g5.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>Наша галерея</p>
+								</div>
+							</a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!-- //gallery -->
+<!--map-->
+		<div class="map-w3ls">
+				<h4 class="title-w3">Обчислення маршруту</h4>
+		<div class="container map">
+    		<form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-xs-10">
+                    <input type="text" id="from" placeholder="Звідки" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-10">
+                    <input type="text" id="to" placeholder="Куди" class="form-control">
+                </div>
+            </div>
+        </form>
+		</div>
+
+      	<div class="calculate_btn">
+                <button class="btn btn-info btn-lg map_btn" onclick="calcRoute();">Порахувати</button>
+        </div>
+				<div class="container-fluid">
+		            <div id="googleMap">
+
+		            </div>
+		            <div id="output">
+
+		            </div>
+		    </div>
+    </div>
+
+		<!-- modal -->
+	<div class="modal about-modal w3-agileits fade" id="myModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body login-page "><!-- login-page -->
+									<div class="login-top sign-top">
+										<div class="agileits-login">
+										<h5>Send A Message</h5>
+										<form action="#" method="post">
+											<input type="text" name="name" placeholder="Name" required=""/>
+											<input type="text" name="Email" placeholder="Email" required=""/>
+											<input type="text" name="Subject" placeholder="Subject" required=""/>
+											<textarea  name="your message" placeholder="Your message" required="" ></textarea>
+											<div class="w3ls-submit">
+												<input type="submit" value="Send Message">
+											</div>
+										</form>
+
+										</div>
+									</div>
+						</div>
+				</div> <!-- //login-page -->
+			</div>
+		</div>
+	<!-- //modal -->
+<!--//map-->
+
+	<div class="copy">
+		<p>© 2018 Ridge Cargo . Всі права захищені. </p>
+	</div>
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+			<script src="js/jarallax.js"></script>
+			<script src="js/SmoothScroll.min.js"></script>
+			<script type="text/javascript">
+				/* init Jarallax */
+				$('.jarallax').jarallax({
+					speed: 0.5,
+					imgWidth: 1366,
+					imgHeight: 768
+				})
+			</script>
+
+						<script src="js/responsiveslides.min.js"></script>
+							<script>
+								$(function () {
+								  $("#slider3").responsiveSlides({
+									auto: true,
+									pager:true,
+									nav:false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+									  $('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+									  $('.events').append("<li>after event fired.</li>");
+									}
+								  });
+
+								});
+							 </script>
+
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+		<script type="text/javascript">
+		$(function() {
+			$('.gallery a').Chocolat();
+		});
+		</script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/common.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu1pYBVGTpI-Uh0vsd4wSWiB7Czl3J1eg&language=ua&libraries=places"></script>
+<script src="js/map.js"></script>
+<script>
+var __REPLAIN_ = 'c49ec265-aadb-47ce-95bc-143f476c677c';
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
+</body>
+</html>
